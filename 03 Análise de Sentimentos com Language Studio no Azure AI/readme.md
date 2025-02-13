@@ -78,8 +78,6 @@ Passo a passo de experimento usando:
 ## Resultado:
 ### Sentimento do Documento:
 
-![Captura de tela 2024-03-15 113314](https://github.com/DalilaDeveloperMobile/dio-practice-microsoft-azure-ai-fundamentals/assets/29806802/2bb65bf4-cd85-4117-97f7-75fc1bd6fe57)
-
 ### Sentence 1
 ![S1](https://github.com/AureliobotIA/Microsoft-Fundamentos-de-AI-DIO/blob/main/03%20An%C3%A1lise%20de%20Sentimentos%20com%20Language%20Studio%20no%20Azure%20AI/inputs/sentenca%2001.JPG
 )
