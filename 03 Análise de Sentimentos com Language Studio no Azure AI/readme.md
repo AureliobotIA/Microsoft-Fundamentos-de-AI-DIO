@@ -6,197 +6,118 @@
 
 ## Previsão
 
-Antes de qualquer coisa, é necessário ter ou criar uma conta no Microsoft Azure. Caso não tenha, é só seguir esse [link](https://azure.microsoft.com/pt-br/free/) e criar a sua.
+# language-studio-microsoft-azure
 
-## Como criar um espaço de trabalho do Azure Machine Learning
-
-1. Entre no [portal do Azure](https://portal.azure.com) usando  suas credenciais da Microsoft.
-
-2. Selecione + **Criar um recurso** , pesquise Machine Learning e **crie um novo recurso do Azure Machine Learning com as configurações abaixo**:
-
-* **Assinatura**: sua assinatura do Azure.
-* **Grupo de recursos**: Crie ou selecione um grupo de recursos.
-* **Nome**: Insira um nome exclusivo para seu espaço de trabalho.
-* **Região**: Selecione a região geográfica mais próxima.
-* **Conta de armazenamento**: observe a nova conta de armazenamento padrão que será criada para seu espaço de trabalho.
-* **Cofre de chaves**: Observe o novo cofre de chaves padrão que será criado para seu espaço de trabalho.
-* **Insights de aplicativo**: observe o novo recurso padrão de insights de aplicativo que será criado para seu espaço de trabalho.
-* **Registro de contêiner**: Nenhum (um será criado automaticamente na primeira vez que você implantar um modelo em um contêiner).
-
-3. Selecione **Revisar + criar** e selecione **Criar**. Aguarde a criação do seu espaço de trabalho (pode demorar alguns minutos) e, em seguida, vá para o recurso implantado.
-
-4. Selecione **Launch Studio** (ou abra uma nova guia do navegador e navegue até https://ml.azure.com e entre no Azure Machine Learning Studio usando sua conta da Microsoft). Feche todas as mensagens exibidas.
-
-5. No estúdio Azure Machine Learning, você deverá ver seu espaço de trabalho recém-criado. Caso contrário, selecione Todos os espaços de trabalho no menu à esquerda e selecione o espaço de trabalho que você acabou de criar.
-
-## Use aprendizado de máquina automatizado para treinar um modelo
-
-1. No [Azure Machine Learning Studio](https://ml.azure.com/home?tid=da49a844-e2e3-40af-86a6-c3819d704f49), veja a página **ML Automatizado**.
-
-2. Crie um novo trabalho de ML automatizado com as seguintes configurações, avançando quando necessário pela interface do usuário:
-
-### Configurações básicas:
-
-* **Nome do trabalho**: mslearn-bike-automl
-* **Novo nome do experimento**: mslearn-bike-rental
-* **Descrição**: Aprendizado de máquina automatizado para previsão de aluguel de bicicletas
-* **Marcadores**: nenhum
-
-### Tipo de tarefa e dados:
-
-* **Selecione o tipo de tarefa**: Regressão
-* **Selecionar conjunto de dados**: crie um novo conjunto de dados com as seguintes configurações:
-
-    * **Tipo de dados**:
-
-        * **Nome**: aluguel de bicicletas
-        * **Descrição**: dados históricos de aluguel de bicicletas
-        * **Tipo**: Tabular
-
-     * **Fonte de dados**:
-
-        * Selecione Dos **arquivos da web**.
+Passo a passo de experimento usando:
+  - Análise de Sentimentos com Language Studio no Azure AI.
     
-     * **URL da Web**:
+ #### Realizado como desafio de projeto no Bootcamp Microsoft Azure AI Fundamentals da [Dio.me](https://www.dio.me/).
 
-        * **URL da Web**: https://aka.ms/bike-rentals
-        * **Ignorar validação de dados**: não selecionar
-    
-     * **Configurações**:
+> [!NOTE]
+> Essas informações são exclusivamente uma maneira de fazer essas atividades.
+>  Mais o preferencial sempre será a Documentação Oficial: [Estúdio de Fala](https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/09-speech.html),
+ [Language Studio](https://aka.ms/ai900-text-analysis).
 
-        * **Formato de arquivo**: Delimitado
-        * **Delimitador**: Vírgula
-        * **Codificação**: UTF-8s
-        * **Cabeçalhos de coluna**: Apenas o primeiro arquivo possui cabeçalhos
-        * **Pular linhas**: Nenhum
-        * **O conjunto de dados contém dados multilinhas**: Não selecione
+## Estúdio de Fala
+- Em outra guia do navegador, abra o [Portal Estúdio de Fala](https://speech.microsoft.com/portal) entrando com a conta da Microsoft do Azure.
+  
+### Comentário: O sistema pega um arquivo de áudio e vai transcrever em texto ou um texto e vai transformar em áudio.
 
-     * **Esquema**:
+## Configuração:
+#### Selecione Configurações e depois Crie um recurso. Configure-o com as seguintes configurações:
+- Nome do novo recurso : Insira um nome exclusivo.
+- Assinatura : sua assinatura do Azure.
+- Região : Selecione uma região suportada: Leste dos EUA.
+- Nível de preços : selecione Padrão S0.
+- Grupo de recursos : selecione ou crie um grupo de recursos com um nome exclusivo.
+- Selecione Criar recurso.
+- Aguarde até que o recurso seja criado.
+- selecione Usar recurso.
+- Aperte em X para navegar para a página Introdução à Fala.
 
-        * Incluir todas as colunas exceto **Caminho**
-        * Revise os tipos detectados automaticamente
-        
-3. Selecione o conjunto de dados de **aluguel de bicicletas** depois de criá-lo.
+## Conversão de fala em texto: 
+### Passo 1
+- Acessar a parte da tela onde tem conversão de fala em texto.
+- Apertar Conversão de fala em texto em tempo real.
 
-### Configurações de tarefa:
+### Passo 2
+- Escolher um idioma.
+  
+![Captura de tela 2024-03-15 101027](https://github.com/DalilaDeveloperMobile/dio-practice-microsoft-azure-ai-fundamentals/assets/29806802/f9cf00a6-94ac-4811-b4d8-f891b4c1dfb6)
+  
+- Em Escolher arquivos de áudio, selecione Procurar arquivos e navegue até a pasta onde você salvou o arquivo. km_20240128_1080p_30f_20240128_114750 e depois Abrir.
+  
+![Captura de tela 2024-03-15 101045](https://github.com/DalilaDeveloperMobile/dio-practice-microsoft-azure-ai-fundamentals/assets/29806802/2ffca9a7-6d34-4388-925b-806ac491daad)
 
-* **Tipo de tarefa**: Regressão
-* **Conjunto de dados**: aluguel de bicicletas
-* **Coluna de destino**: Aluguéis (inteiro)
-* **Configurações adicionais**:
+## Análise de Sentimentos:
+### Passo 1
+- Em outra guia do navegador, abra o portal do Azure em [Portal Azure](https://portal.azure.com), entrando com a conta da Microsoft associada à sua assinatura do Azure.
 
-    * **Métrica primária**: raiz do erro quadrático médio normalizado
-    * **Explique o melhor modelo* : Não selecionado
-    * **Usar todos os modelos suportados**: Desmarcado . Você restringirá o trabalho para tentar apenas alguns algoritmos específicos.
-    * **Modelos permitidos**: Selecione apenas **RandomForest** e **LightGBM** — normalmente você gostaria de tentar o máximo possível, mas cada modelo adicionado aumenta o tempo necessário para executar o trabalho.
+### Passo 2
+- Clique no botão ＋ Create a resource.
+- Procure por Language service.
+- Selecione criar Language service.
+- Você será levado a uma página para Select additional features.
+- Mantenha a seleção padrão e clique em Continue to create your resource.
 
-* Expanda a seção **Limites**.
+### Passo 3
+#### Na página Create Language, configure-o com as seguintes configurações:
+- Subscription: sua assinatura do Azure.
+- Resource group: selecione ou crie um grupo de recursos com um nome exclusivo.
+- Region: East US.
+- Name: Insira um nome exclusivo..
+- Pricing tier: Free F0.
+- Ao marcar esta caixa, confirmo que li e compreendi todos os termos abaixo: Selecionado.
+- Selecione Review + create e depois Create e aguarde a conclusão da implantação.
 
-    * **Máximo de testes**: 3
-    * **Máximo de testes simultâneos**: 3
-    * **Máximo de nós**: 3
-    * **Limite de pontuação da métrica**: 0,85 (para que, se um modelo atingir uma pontuação da métrica de erro quadrático médio normalizado de 0,085 ou menos, o trabalho termina.)
-    * **Tempo limite**: 15
-    * **Tempo limite de iteração**: 5
-    * **Habilitar rescisão antecipada**: selecionado
+### Passo 4
+- Em outra guia do navegador, abra o [Portal Language Studio](https://language.cognitive.azure.com) e entre com a conta da Microsoft do Azure.
 
-* **Validação e teste**:
+### Passo 5
+#### Quando solicitado com Select an Azure resource, faça as seguintes configurações:
+- Azure directory: Diretório Padrão, o diretório que você está usando. Ex: Canal da Cloud.
+- Azure subscription: Selecione a assinatura que você está usando.
+- Resource type: Language
+- Resource name: Selecione o recurso de serviço de idioma que você acabou de criar.
+- Em seguida, selecione: Done.
 
-    * **Tipo de validação**: divisão de validação de trem
-    * **Porcentagem de dados de validação**: 10
-    * **Conjunto de dados de teste**: Nenhum
+### Passo 6
+- Na página inicial Language Studio. Selecione a guia Classify text.
+- Em seguida, selecione o bloco Analyze sentiment and mine opinions.
+- Em Selecionar idioma do texto, pode ser Inglês ou Português de sua preferência.
+- Escreva a Sentença ou Selecione o seu recurso Azure.
+- Marque o CheckBox e Aperte em Run.
 
-### Calcular
+## Resultado:
+### Sentimento do Documento:
 
-* **Selecione o tipo de computação**: sem servidor
-* **Tipo de máquina virtual**: CPU
-* **Camada de máquina virtual**: Dedicada
-* **Tamanho da máquina virtual**: Standard_DS3_V2
-* **Número de instâncias**: 1
+![Captura de tela 2024-03-15 113314](https://github.com/DalilaDeveloperMobile/dio-practice-microsoft-azure-ai-fundamentals/assets/29806802/2bb65bf4-cd85-4117-97f7-75fc1bd6fe57)
 
-4. Envie o trabalho de treinamento. Ele inicia automaticamente.
+### Sentence 1
+- EN: I bought a size S and it fit perfectly
 
-5. Aguarde o trabalho ser concluído. 
+![S1](https://github.com/DalilaDeveloperMobile/dio-practice-microsoft-azure-ai-fundamentals/assets/29806802/cecddc80-2e0d-4d9d-8c85-f49336e0ff10)
 
-## Avalie o melhor modelo
+### Sentence 2
+- EN: I found the zipper a little bit difficult to get up & down due to the side rushing.
 
-#### Quando o trabalho automatizado de aprendizado de máquina for concluído, você poderá revisar o melhor modelo treinado.
+![S2](https://github.com/DalilaDeveloperMobile/dio-practice-microsoft-azure-ai-fundamentals/assets/29806802/5eb8cc6f-4316-4d4b-83cb-e8a1672686f1)
 
-1. Na guia **Visão geral** do trabalho automatizado de aprendizado de máquina, observe o **melhor resumo do modelo**.
+### Sentence 3
+- EN: The color and material are beautiful in person.
 
-2. Selecione o texto em **Nome do algoritmo** do melhor modelo para visualizar seus detalhes.
+![S3](https://github.com/DalilaDeveloperMobile/dio-practice-microsoft-azure-ai-fundamentals/assets/29806802/e461cb73-f48d-41bc-bb35-a6ec47f8cf0a)
 
-3. Selecione a guia Métricas e selecione os gráficos **residuais** e **predito_true** se eles ainda não estiverem selecionados.
+### Sentence 4
+- EN: Amazingly comfortable!
 
-Revise os gráficos que mostram o desempenho do modelo. O gráfico de **resíduos** mostra os resíduos (as diferenças entre os valores previstos e reais) como um histograma. O gráfico **predito_true** compara os valores previstos com os valores verdadeiros.
+![S4](https://github.com/DalilaDeveloperMobile/dio-practice-microsoft-azure-ai-fundamentals/assets/29806802/b4e1d7a8-ed1b-4e4e-9679-6da73a11d30c)
 
-## Implantar e testar o modelo
+### Original text
+- EN: I bought a size S and it fit perfectly. I found the zipper a little bit difficult to get up & down due to the side rushing. The color and material are beautiful in person. Amazingly comfortable!
 
-1. Na guia **Modelo** do melhor modelo treinado pelo seu trabalho automatizado de machine learning, selecione **Implantar** e use a opção de **serviço Web** para implantar o modelo com as seguintes configurações:
+![OT](https://github.com/DalilaDeveloperMobile/dio-practice-microsoft-azure-ai-fundamentals/assets/29806802/6efd5aff-f1cf-4168-8680-9c133c52f3fa)
 
-* **Nome**: prever-aluguéis
-* **Descrição**: Prever aluguel de bicicletas
-* **Tipo de computação**: Instância de Contêiner do Azure
-* **Habilitar autenticação**: selecionado
+<hr>
 
-2. Aguarde o início da implantação – isso pode levar alguns segundos. O **status de implantação** do endpoint de **previsão de aluguel** será indicado na parte principal da página como Running.
-
-3. Aguarde até que o **status da implantação** mude para Succeeded. Isso pode levar de 5 a 10 minutos.
-
-## Testar o serviço implantado
-
-1. No estúdio Azure Machine Learning, no menu esquerdo, selecione **Endpoints** e abra o ponto final em tempo real de **previsão de alugueres**.
-
-2. Na página do endpoint em tempo real de **previsão de aluguel**, visualize a guia **Teste**.
-
-3. No painel **Dados de entrada** para testar o endpoint, substitua o modelo JSON pelos seguintes dados de entrada:
-
-```
- {
-   "Inputs": { 
-     "data": [
-       {
-         "day": 1,
-         "mnth": 1,   
-         "year": 2022,
-         "season": 2,
-         "holiday": 0,
-         "weekday": 1,
-         "workingday": 1,
-         "weathersit": 2, 
-         "temp": 0.3, 
-         "atemp": 0.3,
-         "hum": 0.3,
-         "windspeed": 0.3 
-       }
-     ]    
-   },   
-   "GlobalParameters": 1.0
- }
-```
-
-4. Clique no botão Testar .
-
-5. Revise os resultados do teste, que incluem um número previsto de aluguéis com base nos recursos de entrada - semelhante a este:
-
-~~~json
- {
-  "Results": [
-    356.9253888264152
-  ]
-}
-~~~
-
-
-#### Limpar
-O serviço Web que você criou está hospedado em uma Instância de Contêiner do Azure. Se você não pretender experimentá-lo ainda mais, exclua o ponto de extremidade para evitar o acúmulo de uso desnecessário do Azure.
-
-No estúdio do Azure Machine Learning, na guia Pontos de extremidade, selecione o ponto de extremidade predict-rentals. Depois, selecione Excluir e confirme que você deseja excluir o ponto de extremidade.
-
-Excluir sua computação garante que a assinatura não seja cobrada pelos recursos de computação. No entanto, você receberá a cobrança de uma pequena quantidade de armazenamento de dados, desde que o workspace do Azure Machine Learning exista em sua assinatura. Se tiver terminado de explorar o Azure Machine Learning, exclua o workspace do Azure Machine Learning e os recursos associados.
-
-Para excluir seu workspace:
-
-No portal do Azure, na página Grupos de recursos, abra o grupo de recursos que você especificou ao criar seu Workspace do Azure Machine Learning.
-Clique em Excluir grupo de recursos, digite o nome do grupo de recursos para confirmar que deseja excluí-lo e selecione Excluir.
-
+<
