@@ -7,17 +7,10 @@
 ## Previsão
 
 # language-studio-microsoft-azure
-
+![Captura de tela 2024-03-15 101045](https://github.com/AureliobotIA/Microsoft-Fundamentos-de-AI-DIO/blob/main/03%20An%C3%A1lise%20de%20Sentimentos%20com%20Language%20Studio%20no%20Azure%20AI/inputs/conversacao%20tempo%20real.JPG)
 Passo a passo de experimento usando:
   - Análise de Sentimentos com Language Studio no Azure AI.
     
- #### Realizado como desafio de projeto no Bootcamp Microsoft Azure AI Fundamentals da [Dio.me](https://www.dio.me/).
-
-> [!NOTE]
-> Essas informações são exclusivamente uma maneira de fazer essas atividades.
->  Mais o preferencial sempre será a Documentação Oficial: [Estúdio de Fala](https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/09-speech.html),
- [Language Studio](https://aka.ms/ai900-text-analysis).
-
 ## Estúdio de Fala
 - Em outra guia do navegador, abra o [Portal Estúdio de Fala](https://speech.microsoft.com/portal) entrando com a conta da Microsoft do Azure.
   
@@ -41,13 +34,9 @@ Passo a passo de experimento usando:
 - Apertar Conversão de fala em texto em tempo real.
 
 ### Passo 2
-- Escolher um idioma.
-  
-![Captura de tela 2024-03-15 101027](https://github.com/DalilaDeveloperMobile/dio-practice-microsoft-azure-ai-fundamentals/assets/29806802/f9cf00a6-94ac-4811-b4d8-f891b4c1dfb6)
-  
-- Em Escolher arquivos de áudio, selecione Procurar arquivos e navegue até a pasta onde você salvou o arquivo. km_20240128_1080p_30f_20240128_114750 e depois Abrir.
-  
-![Captura de tela 2024-03-15 101045](https://github.com/DalilaDeveloperMobile/dio-practice-microsoft-azure-ai-fundamentals/assets/29806802/2ffca9a7-6d34-4388-925b-806ac491daad)
+
+![Captura de tela 2024-03-15 101045](https://github.com/AureliobotIA/Microsoft-Fundamentos-de-AI-DIO/blob/main/03%20An%C3%A1lise%20de%20Sentimentos%20com%20Language%20Studio%20no%20Azure%20AI/inputs/audio%20em%20texto.JPG
+)
 
 ## Análise de Sentimentos:
 ### Passo 1
@@ -72,7 +61,7 @@ Passo a passo de experimento usando:
 
 ### Passo 4
 - Em outra guia do navegador, abra o [Portal Language Studio](https://language.cognitive.azure.com) e entre com a conta da Microsoft do Azure.
-
+![Captura de tela 2024-03-15 101045](https://github.com/AureliobotIA/Microsoft-Fundamentos-de-AI-DIO/blob/main/03%20An%C3%A1lise%20de%20Sentimentos%20com%20Language%20Studio%20no%20Azure%20AI/inputs/conversacao%20tempo%20real.JPG)
 ### Passo 5
 #### Quando solicitado com Select an Azure resource, faça as seguintes configurações:
 - Azure directory: Diretório Padrão, o diretório que você está usando. Ex: Canal da Cloud.
