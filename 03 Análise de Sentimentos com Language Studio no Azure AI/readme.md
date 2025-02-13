@@ -4,9 +4,7 @@
     <span> Análise de Sentimentos com Language Studio no Azure AI</span>
 </h1>
 
-## Previsão
 
-# language-studio-microsoft-azure
 ![Captura de tela 2024-03-15 101045](https://github.com/AureliobotIA/Microsoft-Fundamentos-de-AI-DIO/blob/main/03%20An%C3%A1lise%20de%20Sentimentos%20com%20Language%20Studio%20no%20Azure%20AI/inputs/conversacao%20tempo%20real.JPG)
 Passo a passo de experimento usando:
   - Análise de Sentimentos com Language Studio no Azure AI.
@@ -61,7 +59,7 @@ Passo a passo de experimento usando:
 
 ### Passo 4
 - Em outra guia do navegador, abra o [Portal Language Studio](https://language.cognitive.azure.com) e entre com a conta da Microsoft do Azure.
-![Captura de tela 2024-03-15 101045](https://github.com/AureliobotIA/Microsoft-Fundamentos-de-AI-DIO/blob/main/03%20An%C3%A1lise%20de%20Sentimentos%20com%20Language%20Studio%20no%20Azure%20AI/inputs/conversacao%20tempo%20real.JPG)
+![Captura de tela 2024-03-15 101045](https://github.com/AureliobotIA/Microsoft-Fundamentos-de-AI-DIO/blob/main/03%20An%C3%A1lise%20de%20Sentimentos%20com%20Language%20Studio%20no%20Azure%20AI/inputs/sentimentos.JPG)
 ### Passo 5
 #### Quando solicitado com Select an Azure resource, faça as seguintes configurações:
 - Azure directory: Diretório Padrão, o diretório que você está usando. Ex: Canal da Cloud.
@@ -83,30 +81,21 @@ Passo a passo de experimento usando:
 ![Captura de tela 2024-03-15 113314](https://github.com/DalilaDeveloperMobile/dio-practice-microsoft-azure-ai-fundamentals/assets/29806802/2bb65bf4-cd85-4117-97f7-75fc1bd6fe57)
 
 ### Sentence 1
-- EN: I bought a size S and it fit perfectly
-
-![S1](https://github.com/DalilaDeveloperMobile/dio-practice-microsoft-azure-ai-fundamentals/assets/29806802/cecddc80-2e0d-4d9d-8c85-f49336e0ff10)
+![S1](https://github.com/AureliobotIA/Microsoft-Fundamentos-de-AI-DIO/blob/main/03%20An%C3%A1lise%20de%20Sentimentos%20com%20Language%20Studio%20no%20Azure%20AI/inputs/sentenca%2001.JPG
+)
 
 ### Sentence 2
-- EN: I found the zipper a little bit difficult to get up & down due to the side rushing.
 
-![S2](https://github.com/DalilaDeveloperMobile/dio-practice-microsoft-azure-ai-fundamentals/assets/29806802/5eb8cc6f-4316-4d4b-83cb-e8a1672686f1)
+![S2](https://github.com/AureliobotIA/Microsoft-Fundamentos-de-AI-DIO/blob/main/03%20An%C3%A1lise%20de%20Sentimentos%20com%20Language%20Studio%20no%20Azure%20AI/inputs/sentenca%2002.JPG
+)
 
 ### Sentence 3
-- EN: The color and material are beautiful in person.
 
-![S3](https://github.com/DalilaDeveloperMobile/dio-practice-microsoft-azure-ai-fundamentals/assets/29806802/e461cb73-f48d-41bc-bb35-a6ec47f8cf0a)
+![S3](https://github.com/AureliobotIA/Microsoft-Fundamentos-de-AI-DIO/blob/main/03%20An%C3%A1lise%20de%20Sentimentos%20com%20Language%20Studio%20no%20Azure%20AI/inputs/sentenca%2003.JPG
+)
 
 ### Sentence 4
-- EN: Amazingly comfortable!
 
-![S4](https://github.com/DalilaDeveloperMobile/dio-practice-microsoft-azure-ai-fundamentals/assets/29806802/b4e1d7a8-ed1b-4e4e-9679-6da73a11d30c)
+![S4](https://github.com/AureliobotIA/Microsoft-Fundamentos-de-AI-DIO/blob/main/03%20An%C3%A1lise%20de%20Sentimentos%20com%20Language%20Studio%20no%20Azure%20AI/inputs/sentenca%2004.JPG
+)
 
-### Original text
-- EN: I bought a size S and it fit perfectly. I found the zipper a little bit difficult to get up & down due to the side rushing. The color and material are beautiful in person. Amazingly comfortable!
-
-![OT](https://github.com/DalilaDeveloperMobile/dio-practice-microsoft-azure-ai-fundamentals/assets/29806802/6efd5aff-f1cf-4168-8680-9c133c52f3fa)
-
-<hr>
-
-<
