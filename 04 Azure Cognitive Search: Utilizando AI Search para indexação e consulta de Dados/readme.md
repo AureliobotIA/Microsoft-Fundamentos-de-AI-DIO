@@ -55,7 +55,7 @@ Passo a passo de experimento usando:
 ### Passo 4
 - No painel de menu esquerdo, selecione Containers.
 
-![Captura de tela 2024-03-18 100428](https://github.com/AureliobotIA/Microsoft-Fundamentos-de-AI-DIO/blob/main/04%20Azure%20Cognitive%20Search%3A%20Utilizando%20AI%20Search%20para%20indexa%C3%A7%C3%A3o%20e%20consulta%20de%20Dados/input/04.png)
+![Captura de tela](https://github.com/AureliobotIA/Microsoft-Fundamentos-de-AI-DIO/blob/main/04%20Azure%20Cognitive%20Search%3A%20Utilizando%20AI%20Search%20para%20indexa%C3%A7%C3%A3o%20e%20consulta%20de%20Dados/input/04.png)
 
 - Selecione + Container. Um painel do seu lado direito é aberto.
 - Insira as seguintes configurações e clique em Create:
@@ -68,12 +68,12 @@ Passo a passo de experimento usando:
 - Em uma nova guia do navegador, baixe as avaliações compactadas do café em https://aka.ms/mslearn-coffee-reviews, e extraia os arquivos para a pasta de coffee-reviews.
 - No portal do Azure, selecione o coffee-reviews container. No container, selecione Upload.
 
-![Captura de tela 2024-03-18 102156](https://github.com/AureliobotIA/Microsoft-Fundamentos-de-AI-DIO/blob/main/04%20Azure%20Cognitive%20Search%3A%20Utilizando%20AI%20Search%20para%20indexa%C3%A7%C3%A3o%20e%20consulta%20de%20Dados/input/05.png)
+![Captura de tela ](https://github.com/AureliobotIA/Microsoft-Fundamentos-de-AI-DIO/blob/main/04%20Azure%20Cognitive%20Search%3A%20Utilizando%20AI%20Search%20para%20indexa%C3%A7%C3%A3o%20e%20consulta%20de%20Dados/input/05.png)
 
 - No painel Upload blob, selecione Selecionar um arquivo.
 - Na janela do Explorer, selecione todos os arquivos na pasta de avaliações, selecione Abrir e, em seguida, selecione Upload.
 
-![Captura de tela 2024-03-18 102558](https://github.com/AureliobotIA/Microsoft-Fundamentos-de-AI-DIO/blob/main/04%20Azure%20Cognitive%20Search%3A%20Utilizando%20AI%20Search%20para%20indexa%C3%A7%C3%A3o%20e%20consulta%20de%20Dados/input/05%202.png)
+![Captura de tela ](https://github.com/AureliobotIA/Microsoft-Fundamentos-de-AI-DIO/blob/main/04%20Azure%20Cognitive%20Search%3A%20Utilizando%20AI%20Search%20para%20indexa%C3%A7%C3%A3o%20e%20consulta%20de%20Dados/input/05%202.png)
 
 - Depois que o upload for concluído, você poderá fechar o painel Upload blob. Seus documentos estão agora em seu coffee-reviews storage container.
 
@@ -130,7 +130,7 @@ Passo a passo de experimento usando:
 ### Passo 10
 - Abrir o Azure AI Services| Ai Search, e Aperte em Search Explorer
 
-![Captura de tela 2024-03-18 121011](https://github.com/AureliobotIA/Microsoft-Fundamentos-de-AI-DIO/blob/main/04%20Azure%20Cognitive%20Search%3A%20Utilizando%20AI%20Search%20para%20indexa%C3%A7%C3%A3o%20e%20consulta%20de%20Dados/input/10.png)
+![Captura de tela ](https://github.com/AureliobotIA/Microsoft-Fundamentos-de-AI-DIO/blob/main/04%20Azure%20Cognitive%20Search%3A%20Utilizando%20AI%20Search%20para%20indexa%C3%A7%C3%A3o%20e%20consulta%20de%20Dados/input/10.png)
 
 - No Search Explorer, Filtrar por conta search=*&$count=true, e aperte em "search".
 
