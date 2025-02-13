@@ -59,7 +59,7 @@ Passo a passo de experimento usando:
 
 ### Passo 4
 - Em outra guia do navegador, abra o [Portal Language Studio](https://language.cognitive.azure.com) e entre com a conta da Microsoft do Azure.
-![Captura de tela 2024-03-15 101045](https://github.com/AureliobotIA/Microsoft-Fundamentos-de-AI-DIO/blob/main/03%20An%C3%A1lise%20de%20Sentimentos%20com%20Language%20Studio%20no%20Azure%20AI/inputs/sentimentos.JPG)
+![Captura de tela 2024-03-15 101045](https://github.com/AureliobotIA/Microsoft-Fundamentos-de-AI-DIO/blob/main/03%20An%C3%A1lise%20de%20Sentimentos%20com%20Language%20Studio%20no%20Azure%20AI/inputs/language%20azure.JPG)
 ### Passo 5
 #### Quando solicitado com Select an Azure resource, faça as seguintes configurações:
 - Azure directory: Diretório Padrão, o diretório que você está usando. Ex: Canal da Cloud.
